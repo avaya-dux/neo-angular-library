@@ -1,6 +1,16 @@
 {
-  "name": "neo-angular",
+  "name": "@avaya/neo-angular",
   "version": "0.0.0",
+  "description": "This is the Angular version of the shared library called 'NEO' built by Avaya",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "repository": "github:avaya-dux/neo-angular-library",
+  "homepage": "https://design.avaya.com/docs/setup",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE.md",
+    "LICENSE-3rd-party.html"
+  ],
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -33,6 +43,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "ng-packagr": "^17.0.0",
     "typescript": "~5.2.2"
   }
 }
