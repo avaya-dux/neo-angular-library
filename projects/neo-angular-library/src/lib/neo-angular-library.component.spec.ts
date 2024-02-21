@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NewAngularLibraryComponent } from './new-angular-library.component';
+import { NewAngularLibraryComponent } from './neo-angular-library.component';
 
 describe('NewAngularLibraryComponent', () => {
   let component: NewAngularLibraryComponent;

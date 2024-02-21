@@ -12,8 +12,8 @@
     "esModuleInterop": true,
     "sourceMap": true,
     "paths": {
-      "new-angular-library": [
-        "./dist/new-angular-library"
+      "neo-angular-library": [
+        "./dist/neo-angular-library"
       ]
     },
     "declaration": false,
