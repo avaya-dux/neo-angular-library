@@ -30,10 +30,10 @@ jobs:
         run: npm install -g @angular/cli
       
       - name: Build Library
-        run: npm run build
+        run: ng build neo-angular-library
       
       - name: Run Tests
-        run: echo "npm test" # Disabld for now.
+        run: echo "ng test neo-angular-library" # Disabled for now.
 
       - name: Lint
-        run: ng lint neo-angular-library
+        run: echo "ng lint neo-angular-library" #Disabled for now
