@@ -34,3 +34,6 @@ jobs:
       
       - name: Run Tests
         run: echo "npm test" # Disabld for now.
+
+      - name: Lint
+        run: ng lint neo-angular-library
