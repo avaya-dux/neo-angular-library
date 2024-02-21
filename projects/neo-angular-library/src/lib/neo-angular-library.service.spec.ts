@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { NewAngularLibraryService } from './new-angular-library.service';
+import { NewAngularLibraryService } from './neo-angular-library.service';
 
 describe('NewAngularLibraryService', () => {
   let service: NewAngularLibraryService;
