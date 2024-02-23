@@ -34,6 +34,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 - [accessibility guidelines](https://github.com/avaya-dux/neo-angular-angular/blob/main/readmes/accessibility-guidelines.md)
 - [coding guidelines](https://github.com/avaya-dux/neo-angular-angular/blob/main/readmes/coding-guidelines.md)
+- [how to dev](https://github.com/avaya-dux/neo-angular-angular/blob/main/readmes/how-to-dev.md)
 - [how to publish](https://github.com/avaya-dux/neo-angular-angular/blob/main/readmes/how-to-publish.md)
 - [periphery tech](https://github.com/avaya-dux/neo-angular-angular/blob/main/readmes/periphery-tech.md)
 - [pr best practices](https://github.com/avaya-dux/neo-angular-angular/blob/main/readmes/pr-best-practices.md)
