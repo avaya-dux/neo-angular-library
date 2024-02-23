@@ -25,6 +25,4 @@ Once that is complete, the next step is to add the release to our GitHub
 - target `main` branch
 - add title using format: "v0.1.0 (Jan 18th 2024)"
 - click: "Auto-generate release notes"
-- attach the binary generated from `yarn all` (tgz file)
 - click: "Publish release"
-- create a PR and bump package.json version

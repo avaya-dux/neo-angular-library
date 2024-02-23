@@ -15,8 +15,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test --browsers ChromeHeadless --watch false",
     "test:watch": "ng test",
-    "format": "yarn prettier --write ./projects/neo-standalone-components/src --log-level warn",
-    "format:check": "yarn prettier --check ./projects/neo-standalone-components/src --log-level warn",
+    "format": "npm run prettier --write ./projects/neo-standalone-components/src --log-level warn",
+    "format:check": "npm run prettier --check ./projects/neo-standalone-components/src --log-level warn",
     "lint": "ng lint"
   },
   "dependencies": {
