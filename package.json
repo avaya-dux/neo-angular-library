@@ -1,15 +1,18 @@
 {
-  "name": "neo-angular-lib",
-  "version": "0.0.0",
+  "name": "neo-angular-library",
+  "description": "TODO: add description",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "homepage": "https://design.avaya.com/docs/setup",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:release": "ng build neo-standalone-components --configuration production",
+    "publish:lib": "npm publish ./dist/neo-standalone-components/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^17.2.0",
     "@angular/common": "^17.2.0",
