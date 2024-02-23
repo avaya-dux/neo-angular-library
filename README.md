@@ -1,4 +1,4 @@
-# NeoAngularLib
+# Neo Angular Component Library
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.1.
 
@@ -8,7 +8,8 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `ng generate component component-name --project neo-standalone-components` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project neo-standalone-components`.
+> Note: Don't forget to add `--project neo-standalone-components` or else it will be added to the default project in your `angular.json` file.
 
 ## Build
 
@@ -25,3 +26,16 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## other readme files
+
+- [accessibility guidelines](https://github.com/avaya-dux/neo-react-angular/blob/main/readmes/accessibility-guidelines.md)
+- [coding guidelines](https://github.com/avaya-dux/neo-react-angular/blob/main/readmes/coding-guidelines.md)
+- [how to dev](https://github.com/avaya-dux/neo-react-angular/blob/main/readmes/how-to-dev.md)
+- [how to publish](https://github.com/avaya-dux/neo-react-angular/blob/main/readmes/how-to-publish.md)
+- [periphery tech](https://github.com/avaya-dux/neo-react-angular/blob/main/readmes/periphery-tech.md)
+- [pr best practices](https://github.com/avaya-dux/neo-react-angular/blob/main/readmes/pr-best-practices.md)
+
+## License
+
+Copyright 2020-2024 Avaya Inc. All Rights Reserved.
