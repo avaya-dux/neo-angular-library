@@ -5,7 +5,6 @@
 - every component **_must_** have examples
 - every component **_must_** have tests (ideally proving the tickets Acceptance Criteria)
 - prefer `interface` over `type`
-- prefer react hooks over react classes
 - stronlgy enforce accessibility, `throw` if accessibility errors are encountered
 - name prop definitions well
 - run `npm run all` before opening a PR (which runs tests, formats files, ect.)
