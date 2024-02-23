@@ -9,15 +9,15 @@
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
-    "esModuleInterop": true,
-    "sourceMap": true,
+    "skipLibCheck": true,
     "paths": {
-      "neo-angular-library": [
-        "./dist/neo-angular-library"
+      "neo-standalone-components": [
+        "./dist/neo-standalone-components"
       ]
     },
+    "esModuleInterop": true,
+    "sourceMap": true,
     "declaration": false,
-    "downlevelIteration": true,
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,

@@ -1,9 +1,9 @@
 {
-  "name": "neo-angular-library",
+  "name": "neo-standalone-components",
   "version": "0.0.1",
   "peerDependencies": {
-    "@angular/common": "^17.0.0",
-    "@angular/core": "^17.0.0"
+    "@angular/common": "^17.2.0",
+    "@angular/core": "^17.2.0"
   },
   "dependencies": {
     "tslib": "^2.3.0"
