@@ -58,7 +58,7 @@ body:
     id: bug-reproduction
     attributes:
       label: Link to Minimal Reproducible Example
-      placeholder: 'https://stackblitz.com/abcd1234'
+      placeholder: "https://stackblitz.com/abcd1234"
     validations:
       required: true
   - type: checkboxes
@@ -66,5 +66,5 @@ body:
     attributes:
       label: Participation
       options:
-        - label:  I am willing to submit a pull request for this issue.
+        - label: I am willing to submit a pull request for this issue.
           required: false

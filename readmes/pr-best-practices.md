@@ -22,4 +22,3 @@ This is the "living document" that describes the teams agreed upon bets practice
 - check in early, request reviews early
 - if you will be making 5+ changes/check-ins to your PR, close it and then re-open it when you believe it will be ready for merging
 - - this helps reduce netlify cost due to "build minutes"
-
