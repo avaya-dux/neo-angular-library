@@ -3,117 +3,23 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "neo-angular": {
-      "projectType": "application",
-      "schematics": {
-        "@schematics/angular:component": {
-          "style": "scss"
-        }
-      },
-      "root": "",
-      "sourceRoot": "src",
-      "prefix": "app",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-angular:application",
-          "options": {
-            "outputPath": "dist/neo-angular",
-            "index": "src/index.html",
-            "browser": "src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
-            "tsConfig": "tsconfig.app.json",
-            "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
-            "scripts": []
-          },
-          "configurations": {
-            "production": {
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
-                }
-              ],
-              "outputHashing": "all"
-            },
-            "development": {
-              "optimization": false,
-              "extractLicenses": false,
-              "sourceMap": true
-            }
-          },
-          "defaultConfiguration": "production"
-        },
-        "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
-          "configurations": {
-            "production": {
-              "buildTarget": "neo-angular:build:production"
-            },
-            "development": {
-              "buildTarget": "neo-angular:build:development"
-            }
-          },
-          "defaultConfiguration": "development"
-        },
-        "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
-          "options": {
-            "buildTarget": "neo-angular:build"
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
-            "tsConfig": "tsconfig.spec.json",
-            "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
-            "scripts": []
-          }
-        }
-      }
-    },
-    "neo-angular-library": {
+    "neo-standalone-components": {
       "projectType": "library",
-      "root": "projects/neo-angular-library",
-      "sourceRoot": "projects/neo-angular-library/src",
+      "root": "projects/neo-standalone-components",
+      "sourceRoot": "projects/neo-standalone-components/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/neo-angular-library/ng-package.json"
+            "project": "projects/neo-standalone-components/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/neo-angular-library/tsconfig.lib.prod.json"
+              "tsConfig": "projects/neo-standalone-components/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/neo-angular-library/tsconfig.lib.json"
+              "tsConfig": "projects/neo-standalone-components/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -121,10 +27,16 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "tsConfig": "projects/neo-angular-library/tsconfig.spec.json",
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
+            "tsConfig": "projects/neo-standalone-components/tsconfig.spec.json",
+            "polyfills": ["zone.js", "zone.js/testing"]
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/neo-standalone-components/**/*.ts",
+              "projects/neo-standalone-components/**/*.html"
             ]
           }
         }
@@ -132,6 +44,6 @@
     }
   },
   "cli": {
-    "analytics": false
+    "schematicCollections": ["@angular-eslint/schematics"]
   }
 }

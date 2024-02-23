@@ -1,17 +1,9 @@
-# neo-angular-library
-A Angular implementation of the Avaya Neo Design system.
+![github workflow status](https://github.com/avaya-dux/neo-angular-library/actions/workflows/ci.yml/badge.svg)
+[![npm version](https://badge.fury.io/js/@avaya%2Fneo-angular.svg)](https://badge.fury.io/js/@avaya%2Fneo-angular)
 
-## TODOs
+# Neo Angular Component Library
 
-- Create an angular library.
-- Provide a way to view components of that library. Such as an example app, a storybook site (which [is what neo-react does](https://neo-react-library-storybook.netlify.app)), or another solution that makes the most sense.
-- Setup a publish process for this library (Joe to do).
-- Contact legal about any getting a license for this project (both neo-react and neo-css are open sourced and MIT licenses).
-- Ensure strong best practices are followed (unit tests, CICD process, strong documentation, ect.).
-
-# NeoAngular
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.1.
 
 ## Development server
 
@@ -19,7 +11,9 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `ng generate component component-name --project neo-standalone-components` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project neo-standalone-components`.
+
+> Note: Don't forget to add `--project neo-standalone-components` or else it will be added to the default project in your `angular.json` file.
 
 ## Build
 
@@ -36,3 +30,16 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## other readme files
+
+- [accessibility guidelines](https://github.com/avaya-dux/neo-angular-angular/blob/main/readmes/accessibility-guidelines.md)
+- [coding guidelines](https://github.com/avaya-dux/neo-angular-angular/blob/main/readmes/coding-guidelines.md)
+- [how to dev](https://github.com/avaya-dux/neo-angular-angular/blob/main/readmes/how-to-dev.md)
+- [how to publish](https://github.com/avaya-dux/neo-angular-angular/blob/main/readmes/how-to-publish.md)
+- [periphery tech](https://github.com/avaya-dux/neo-angular-angular/blob/main/readmes/periphery-tech.md)
+- [pr best practices](https://github.com/avaya-dux/neo-angular-angular/blob/main/readmes/pr-best-practices.md)
+
+## License
+
+Copyright 2020-2024 Avaya Inc. All Rights Reserved.

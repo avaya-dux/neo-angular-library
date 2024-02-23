@@ -10,30 +10,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      
+
       - name: Install Node JS
         uses: actions/setup-node@v4
         with:
-          node-version: "18"
+          node-version: "20"
 
-      - name: Install Chromium
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y wget
-          wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-          sudo apt-get install -y ./google-chrome-stable_current_amd64.deb
-
-      - name: Install NPM dependencies
-        run: npm install
-      
-      - name: Install Angular CLI
-        run: npm install -g @angular/cli
-      
-      - name: Build Library
-        run: ng build neo-angular-library
-      
-      - name: Run Tests
-        run: echo "ng test neo-angular-library" # Disabled for now.
-
-      - name: Lint
-        run: echo "ng lint neo-angular-library" #Disabled for now
+      - name: install, lint, test, and build
+        run: npm run github
