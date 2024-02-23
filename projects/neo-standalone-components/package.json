@@ -1,7 +1,7 @@
 {
   "name": "@avaya/neo-angular",
-  "version": "0.0.1",
-  "description": "TODO: add description",
+  "version": "0.0.1-alpha.3",
+  "description": "The component library for Avaya NEO in Angular.",
   "license": "SEE LICENSE IN LICENSE.md",
   "repository": "github:avaya-dux/neo-angular-library",
   "homepage": "https://design.avaya.com/docs/setup",
@@ -10,11 +10,11 @@
     "registry": "https://registry.npmjs.org/"
   },
   "peerDependencies": {
-    "@angular/common": "^17.2.0",
-    "@angular/core": "^17.2.0"
+    "@angular/common": "17.2.0",
+    "@angular/core": "17.2.0"
   },
   "dependencies": {
-    "tslib": "^2.3.0"
+    "tslib": "2.3.0"
   },
   "sideEffects": false
 }
