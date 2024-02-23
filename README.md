@@ -1,3 +1,9 @@
+![github workflow status](https://github.com/avaya-dux/neo-angular-library/actions/workflows/ci.yml/badge.svg)
+
+[![Continues Integration](https://github.com/avaya-dux/neo-angular-library/actions/workflows/ci.yml/badge.svg)](https://github.com/avaya-dux/neo-angular-library/actions/workflows/ci.yml)
+
+[![npm version](https://badge.fury.io/js/@avaya%2Fneo-angular.svg)](https://badge.fury.io/js/@avaya%2Fneo-angular)
+
 # Neo Angular Component Library
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.1.
