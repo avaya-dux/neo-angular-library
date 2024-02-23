@@ -1,7 +1,4 @@
 ![github workflow status](https://github.com/avaya-dux/neo-angular-library/actions/workflows/ci.yml/badge.svg)
-
-[![Continues Integration](https://github.com/avaya-dux/neo-angular-library/actions/workflows/ci.yml/badge.svg)](https://github.com/avaya-dux/neo-angular-library/actions/workflows/ci.yml)
-
 [![npm version](https://badge.fury.io/js/@avaya%2Fneo-angular.svg)](https://badge.fury.io/js/@avaya%2Fneo-angular)
 
 # Neo Angular Component Library
