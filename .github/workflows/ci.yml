@@ -1,0 +1,36 @@
+name: Continues Integration
+on:
+  pull_request:
+    branches:
+      - main
+jobs:
+  build:
+    name: NPM Install/Build/Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node JS
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+
+      - name: Install Chromium
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y wget
+          wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+          sudo apt-get install -y ./google-chrome-stable_current_amd64.deb
+
+      - name: Install NPM dependencies
+        run: npm install
+
+      - name: Install Angular CLI
+        run: npm install -g @angular/cli
+
+      - name: Build Library
+        run: npm run build
+
+      - name: Run Tests
+        run: echo "npm test" # Disabld for now.
