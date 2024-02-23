@@ -6,6 +6,7 @@
   "scripts": {
     "clean": "rm -rf .angular dist",
     "all": "npm run clean && npm i && npm run lint && npm run test && npm run build:release",
+    "github": "npm i && npm run lint && npm run test && npm run build:release",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
