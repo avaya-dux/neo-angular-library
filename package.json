@@ -11,6 +11,7 @@
     "start": "ng serve",
     "build": "ng build",
     "build:release": "ng build neo-standalone-components --configuration production",
+    "build:netlify": "npm i && npm run build && npm run build-storybook",
     "publish:lib": "npm publish ./dist/neo-standalone-components/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test --browsers ChromeHeadless --watch false",
