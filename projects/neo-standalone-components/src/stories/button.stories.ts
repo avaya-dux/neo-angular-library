@@ -1,12 +1,12 @@
-import type { Meta, StoryObj } from '@storybook/angular';
+import type { Meta, StoryObj } from "@storybook/angular";
 
-import { ButtonComponent } from './button.component';
+import { ButtonComponent } from "./button.component";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories
 const meta: Meta<ButtonComponent> = {
-  title: 'Example/Button',
+  title: "Example/Button",
   component: ButtonComponent,
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   render: (args: ButtonComponent) => ({
     props: {
       backgroundColor: null,
@@ -15,7 +15,7 @@ const meta: Meta<ButtonComponent> = {
   }),
   argTypes: {
     backgroundColor: {
-      control: 'color',
+      control: "color",
     },
   },
 };
@@ -27,26 +27,26 @@ type Story = StoryObj<ButtonComponent>;
 export const Primary: Story = {
   args: {
     primary: true,
-    label: 'Button',
+    label: "Button",
   },
 };
 
 export const Secondary: Story = {
   args: {
-    label: 'Button',
+    label: "Button",
   },
 };
 
 export const Large: Story = {
   args: {
-    size: 'large',
-    label: 'Button',
+    size: "large",
+    label: "Button",
   },
 };
 
 export const Small: Story = {
   args: {
-    size: 'small',
-    label: 'Button',
+    size: "small",
+    label: "Button",
   },
 };
