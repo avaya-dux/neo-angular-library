@@ -14,9 +14,9 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ## Code scaffolding
 
-Run `ng generate component component-name --project neo-standalone-components` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project neo-standalone-components`.
+Run `ng generate component component-name --project examples` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project examples`.
 
-> Note: Don't forget to add `--project neo-standalone-components` or else it will be added to the default project in your `angular.json` file.
+> Note: Don't forget to add `--project examples` or else it will be added to the default project in your `angular.json` file.
 
 ## Build
 
