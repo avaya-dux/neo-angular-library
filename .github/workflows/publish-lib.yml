@@ -6,20 +6,12 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Install Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
         with:
-          node-version: 18
-
-      - name: build neo-angular package
-        run: npm run build:release
-
+          node-version: "20"
+      - run: npm i && mkdir -p dist && npm run build:release
       - uses: JS-DevTools/npm-publish@v3
         with:
           token: ${{ secrets.NPM_AUTH_TOKEN }}
-          package: ./src/dist/neo-standalone-components/package.json
