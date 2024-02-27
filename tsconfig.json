@@ -11,7 +11,7 @@
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
     "paths": {
-      "neo-standalone-components": ["./dist/neo-standalone-components"]
+      "examples": ["./dist/examples"]
     },
     "esModuleInterop": true,
     "sourceMap": true,

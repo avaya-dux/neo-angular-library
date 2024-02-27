@@ -3,23 +3,23 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "neo-standalone-components": {
+    "examples": {
       "projectType": "library",
-      "root": "projects/neo-standalone-components",
-      "sourceRoot": "projects/neo-standalone-components/src",
+      "root": "projects/examples",
+      "sourceRoot": "projects/examples/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/neo-standalone-components/ng-package.json"
+            "project": "projects/examples/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/neo-standalone-components/tsconfig.lib.prod.json"
+              "tsConfig": "projects/examples/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/neo-standalone-components/tsconfig.lib.json"
+              "tsConfig": "projects/examples/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -27,7 +27,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "tsConfig": "projects/neo-standalone-components/tsconfig.spec.json",
+            "tsConfig": "projects/examples/tsconfig.spec.json",
             "polyfills": [
               "zone.js",
               "zone.js/testing"
@@ -38,16 +38,16 @@
           "builder": "@angular-eslint/builder:lint",
           "options": {
             "lintFilePatterns": [
-              "projects/neo-standalone-components/**/*.ts",
-              "projects/neo-standalone-components/**/*.html"
+              "projects/examples/**/*.ts",
+              "projects/examples/**/*.html"
             ]
           }
         },
         "storybook": {
           "builder": "@storybook/angular:start-storybook",
           "options": {
-            "configDir": "projects/neo-standalone-components/.storybook",
-            "browserTarget": "neo-standalone-components:build",
+            "configDir": "projects/examples/.storybook",
+            "browserTarget": "examples:build",
             "compodoc": false,
             "port": 6006
           }
@@ -55,8 +55,8 @@
         "build-storybook": {
           "builder": "@storybook/angular:build-storybook",
           "options": {
-            "configDir": "projects/neo-standalone-components/.storybook",
-            "browserTarget": "neo-standalone-components:build",
+            "configDir": "projects/examples/.storybook",
+            "browserTarget": "examples:build",
             "compodoc": false,
             "outputDir": "storybook-static"
           }

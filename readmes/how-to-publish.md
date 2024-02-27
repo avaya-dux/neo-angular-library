@@ -31,4 +31,4 @@ If you need to manually publish, such as to test an alpha release, you only to b
 
 - `npm run all`: to ensure that everything is built properly
 - `npm logn`: to ensure that you are logged into NPMJS
-- `npm publish ./dist/neo-standalone-components/`: to publish the library
+- `npm publish ./dist/examples/`: to publish the library
