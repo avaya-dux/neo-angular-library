@@ -13,7 +13,7 @@
 npm run build:release
 ```
 
-## for local development, run storybook (WIP)
+## for local development, run storybook
 
 ```
 npm run storybook
@@ -42,6 +42,13 @@ npm run lint
 ```
 npm run lint --fix
 ```
+
+## when creating a new component
+
+- follow the naming conventions of your team
+- add a folder under the `src/lib` folder
+- add an `index.ts` that exports the necessary files
+- add your export to the `src/lib/index.ts`; make sure to follow the alphabetical order
 
 ## before commiting to this repo, please read
 
