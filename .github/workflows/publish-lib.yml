@@ -1,0 +1,18 @@
+name: Publish neo-angular to NPM
+on:
+  push:
+    branches: main
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "20"
+      - run: npm i && mkdir -p dist && npm run build:release
+      - uses: JS-DevTools/npm-publish@v3
+        with:
+          token: ${{ secrets.NPM_AUTH_TOKEN }}
+          package: ./projects/neo-standalone-components/package.json

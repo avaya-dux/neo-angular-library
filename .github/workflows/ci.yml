@@ -17,4 +17,4 @@ jobs:
           node-version: "20"
 
       - name: install, lint, test, and build
-        run: npm run github
+        run: npm run build:github

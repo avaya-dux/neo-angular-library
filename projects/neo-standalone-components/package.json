@@ -1,6 +1,6 @@
 {
   "name": "@avaya/neo-angular",
-  "version": "0.0.1-alpha.3",
+  "version": "0.0.1-alpha.4",
   "description": "The component library for Avaya NEO in Angular.",
   "license": "SEE LICENSE IN LICENSE.md",
   "repository": "github:avaya-dux/neo-angular-library",
